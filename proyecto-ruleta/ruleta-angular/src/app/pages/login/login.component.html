@@ -1,0 +1,38 @@
+<div class="center login">
+
+<div>
+<h3>Ingresate aqui</h3>
+<hr>
+
+<div class="centrado formulario-login">
+<form class=""  #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="admin.email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+" >
+
+        <small *ngIf="!email.valid && email.touched"  class="invalid-feedback d-block">
+            El correo no es valido
+        </small>
+    </div>  
+
+    <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" class="form-control"  #password="ngModel" [(ngModel)]="admin.password" required >
+
+        <small *ngIf="!password.valid && password.touched"  class="invalid-feedback d-block">
+            La contraseña no es valida
+        </small>
+    </div>
+
+    <input type="submit" value="Login" class="btn btn-success" [disabled]="loginForm.invalid">
+
+</form>
+</div>
+
+
+</div>
+<div class="img-login">
+    <img src="../../../assets/imagenes/login.png" alt="">
+</div>
+</div>
+

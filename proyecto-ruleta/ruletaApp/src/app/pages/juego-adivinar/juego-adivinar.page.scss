@@ -1,0 +1,91 @@
+#mostrar{
+    font-size: 140px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: blue;
+    max-height: 300px;
+    border: 1px solid blue;
+    align-items: center;
+    
+    margin: 30px 10px 0px 10px;
+
+
+    
+}
+
+#adivinar{
+    border: 1px solid blue;
+
+}
+
+#oportunidades{
+    justify-content: center;
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.texto-input{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+#resultado{
+    color: blue;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#ganar{
+    color: green;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#perder{
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contenido-resultados{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.resultado{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+    align-items: center;
+    border: 1px solid blue;
+    padding: 15px;
+    
+}
+
+.ganar{
+    border: 1px solid green;
+    color: green;
+    background-color: rgb(179, 238, 90);
+
+}
+
+.perder{
+    border: 1px solid red;
+    color: red;
+    background-color: rgb(243, 141, 141);
+}
+
+.oportunidades{
+    border: 1px solid blue;
+    color: blue;
+    background-color: rgb(114, 114, 230);
+}
+
+
+

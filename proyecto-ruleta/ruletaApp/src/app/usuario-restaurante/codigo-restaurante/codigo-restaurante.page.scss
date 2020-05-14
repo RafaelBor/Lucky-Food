@@ -1,0 +1,61 @@
+
+h2{
+    font-weight: 700;
+    
+    
+    
+}
+
+.contenido-cupon{
+    border: 2px solid #3880ff;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20%;
+    margin-top: 120px;
+    
+}
+
+
+.separar-contenido{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+ion-label{
+    color: darkgray;
+}
+
+.contenido{
+    color: #3880ff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.total{
+    display: block;
+    margin: 15px;
+}
+
+.precio{
+    color: red;
+    font-weight: 700;
+    margin: 5px;
+}
+.descuento{
+    color: #3880ff;
+    font-weight: 700;
+    margin: 5px;
+}
+
+.pagar{
+    color: green;
+    font-weight: 700;
+}
+
+.titulo{
+    border-bottom: 2px solid #3880ff;
+    margin-bottom: 15px;
+    
+}

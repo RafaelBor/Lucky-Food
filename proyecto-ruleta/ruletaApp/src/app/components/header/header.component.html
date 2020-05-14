@@ -1,0 +1,41 @@
+<ion-header no-border>
+  
+  
+  <ion-toolbar  color="primary">
+
+    
+      <ion-buttons slot="start">
+        <ion-button (click)="ToggleMenu()">
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+    <!-- *ngIf="identity.role == 'Usuario'"-->  
+
+      <div class="header-icon" *ngIf="identity.role == 'Usuario'">
+    <ion-title text-capitalize>{{identity.nombre | titlecase}} {{identity.apellido | titlecase}}</ion-title>
+
+    <ion-buttons slot="" class="icon">
+      
+      <ion-icon slot="icon-only" name="pricetags" color="warning"></ion-icon>
+      <ion-label class="margin">{{identity.turnos}}</ion-label>
+      
+    </ion-buttons>
+    
+    
+    <ion-buttons slot="" class="icon">
+      
+      <ion-icon slot="icon-only" name="cash-outline" color="warning"></ion-icon>
+      <ion-label class="margin">{{identity.puntaje}}</ion-label>
+      
+    </ion-buttons>
+
+    </div>
+
+    <div *ngIf="identity.role == 'Restaurante'">
+      <ion-title text-capitalize>{{identity.nombre | titlecase}}</ion-title>
+    </div>
+    
+
+  </ion-toolbar>
+</ion-header>

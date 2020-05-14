@@ -1,0 +1,85 @@
+
+<div class="barra-color " *ngIf="!identity">
+  
+  <div class="container barra ">
+    <div class="logo">
+      <img src="../assets/imagenes/ruletaIcono.png" alt="">
+      <h2>Lucky Food</h2>
+    </div>
+    <div class="navegador">
+      <a routerLink="/home">Inicio</a>
+      <a routerLink="/instrucciones">Instrucciones</a>
+      <a href="">Descargar</a>
+      <a routerLink="/login">Login</a>
+    </div>
+  </div>
+
+
+  <div class="texto-header ">
+    <div class="container contenido-header">
+      <div class="header-text">
+        <h1>Prueba tu suerte <hr> Diviertete <hr> y gana los mejores premios <hr></h1>
+      </div>
+      <img src="../assets/imagenes/header.png" alt="">
+    </div>
+  </div>
+
+</div>
+
+<!--ADMIN-->
+<div class="container" *ngIf="identity && identity.role == 'Admin' ">
+  <br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/imagenes/ruletaIcono.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Lucky Food
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/admin">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/restaurantes">Restaurantes</a>
+      </li>
+      
+    </ul>
+
+    <ul class="navbar-nav navbar-right"> 
+
+    </ul>
+
+    <ul class="navbar-nav navbar-right"> 
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/crear-restaurante">Agregar Restaurante</a>
+          <a class="dropdown-item" routerLink="/crear-cupones">Agregar Cupones</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Ajustes</a>
+          <a class="dropdown-item" routerLink='/logout/1'>Cerrar Sesion</a>
+        </div>
+      </li>
+      
+    </ul>
+   
+  </div>
+</nav>
+</div>
+  
+  <div class="container">
+  
+    <router-outlet></router-outlet>
+
+  </div>
+
+  <div class="footer" *ngIf="!identity">
+    <p>Todos los derechos de Lucky Food estan reservados &copy;2020</p>
+  </div>
+  

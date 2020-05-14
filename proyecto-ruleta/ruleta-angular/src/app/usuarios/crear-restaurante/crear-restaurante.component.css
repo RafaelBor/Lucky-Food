@@ -1,0 +1,13 @@
+
+
+
+.formulario-restaurante{
+    padding: 50px;
+    border: 1px solid #3880ff;
+    border-radius: 20%;
+}
+
+.formulario-restaurante label{
+    color: #3880ff;
+}
+

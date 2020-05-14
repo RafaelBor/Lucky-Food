@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  
+<ion-item *ngFor="let restaurant of restaurantes">
+<img src="../../assets/restaurante.png" alt="">
+
+<div class="contenido-restaurante">
+  <ion-title class="titulo-restaurante ">{{restaurant.nombre | titlecase}}</ion-title>
+  <p class="direccion">Direccion: </p>
+
+  <p class="texto-restaurante">{{restaurant.direccion | lowercase}}</p>
+</div>
+</ion-item>
+  
+</ion-content>

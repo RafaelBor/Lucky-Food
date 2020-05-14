@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Podras adivinar el numero?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label id="mostrar">Listo?</ion-label>
+  <div class="texto-input">
+    <ion-input type="number" inputmode="numeric" id="adivinar"></ion-input>
+    <ion-button type="submit" (click)="numero()" class="button" >Adivinar</ion-button>
+  </div>
+  
+  <ion-label id="resultado"></ion-label> 
+  
+  <div class="contenido-resultados">
+
+    <div class="resultado oportunidades">
+      <ion-label>Oportunindades: </ion-label>
+      <ion-label id="oportunidades">5</ion-label>
+      
+    </div>
+    <div class="resultado ganar">
+      
+      <ion-label>Ganaste: </ion-label> <br>
+      <ion-label id="ganar">0</ion-label>
+      
+    </div>
+    <div class="resultado perder">
+      <ion-label>Perdiste: </ion-label> <br>
+      <ion-label id="perder">0</ion-label>
+    </div>
+  </div>
+
+</ion-content>

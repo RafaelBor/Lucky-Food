@@ -1,0 +1,26 @@
+.login{
+    margin-top: 50px;
+    border: 1px solid #3880ff;
+    padding: 50px;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.login h3{
+    color: #3880ff;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+
+.img-login{
+    margin-left: 50px;
+
+}
+
+.img-login img{
+    width: 300px;
+    height: 300px;
+}

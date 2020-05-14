@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/main/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis cupones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let codigo of codigos">
+    
+    <img src="../../assets/imagen-cupon.png" alt="">
+    
+    <div class="contenido-cupon">
+      <ion-title class="titulo-cupon">Codigo: {{codigo.codigo}}</ion-title>
+      <div class="info-cupon">
+        <p class="texto-cupon">Restaurante: <span>{{codigo.codigos.restaurant.nombre}}</span></p>
+        <p class="texto-cupon" color="success">Precio: <span class="precio">{{codigo.codigos.precio}}$</span></p>
+      </div>
+
+      <div class="info-cupon">
+        <p class="texto-cupon">Descuento: <span class="precio">{{codigo.codigos.descuento | currency}}</span></p>
+        <p class="texto-cupon">Ahorro: <span class="precio">{{codigo.codigos.ahorro | currency}}</span></p>
+      </div>
+      
+      <p class="texto-cupon">Descripcion: <span>{{codigo.codigos.descripcion}}</span></p>
+      
+    </div>
+    </ion-item>
+</ion-content>

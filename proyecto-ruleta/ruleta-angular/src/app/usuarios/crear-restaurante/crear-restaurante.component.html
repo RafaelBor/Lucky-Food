@@ -1,0 +1,59 @@
+<div class="col-md-12 mt-3 center">
+    <h3>Ingresar Restaurante</h3>
+
+    <div class="alert alert-success" *ngIf="status == 'success'">
+        Los datos se han guardado correctamente
+     </div>
+ 
+     <div class="alert alert-danger" *ngIf="status == 'error'">
+        Error al guardar los datos
+     </div>
+
+
+<form #restauranteForm="ngForm" (ngSubmit)="onSubmit(restauranteForm)" class=" center">
+
+    <div class="form-group">
+        <div class="formulario-restaurante">
+            <div class="row">
+                <div class="col-sm">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" class="form-control" #nombre="ngModel" [(ngModel)]="restaurante.nombre" required> 
+                </div>
+
+                <div class="col-sm">
+            <label for="descripcion">Direccion</label>
+            <input type="text" name="descripcion" class="form-control" #descripcion="ngModel" [(ngModel)]="restaurante.direccion" required> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm">
+            <label for="descripcion">Celular</label>
+            <input type="text" name="descripcion" class="form-control" #descripcion="ngModel" [(ngModel)]="restaurante.numero_tel" required> 
+                </div>   
+
+                <div class="col-sm">
+            <label for="descripcion">Descripcion</label>
+            <input type="text" name="descripcion" class="form-control" #descripcion="ngModel" [(ngModel)]="restaurante.descripcion" required> 
+                </div>
+            </div> 
+        
+            <br>
+        
+        <label for="email">Email</label>
+        <input type="text" name="email" class="form-control" #email="ngModel" [(ngModel)]="restaurante.email" required> 
+
+        <label for="contraseña">Contraseña</label>
+        <input type="text" name="contraseña" class="form-control" #password="ngModel" [(ngModel)]="restaurante.password" required> 
+        
+    
+       <br>
+        <input type="submit" value="Guardar" class="btn btn-success" [disabled]="restauranteForm.invalid">
+    </div> 
+
+    </div>
+
+
+
+</form>
+</div>

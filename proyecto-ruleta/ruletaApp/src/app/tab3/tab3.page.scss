@@ -1,0 +1,35 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+
+img{
+  width: 50px;
+  height: 50px;
+}
+
+.contenido-restaurante{
+  display: inline;
+}
+
+.texto-restaurante{
+  margin-left: 20px;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.direccion{
+  margin-left: 20px;
+  
+  margin-bottom: 0;
+  font-size: 15px;
+  color: gray;
+}
+
+.titulo-restaurante{
+  margin-top: 10px;
+  color: #3880ff;
+  
+}

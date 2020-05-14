@@ -1,0 +1,45 @@
+.mainSlide, .mainSlide ion-slide {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 200px;
+}
+
+.pick-avatar {
+    width: 80px;
+    opacity: 0.3;
+}
+
+.pick-avatar-seleccionado {
+    transition: opacity 0.5s linear;
+    opacity: 1 !important;
+}
+
+body{
+    background-color: blue;
+}
+
+.fondo{
+    background-color: blue;
+}
+
+.registro{
+    display: inline;
+}
+
+.registro h3{
+    font-weight: 700;
+    color: #3880ff;
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+}
+
+.registrado-correcto{
+    color: green;
+    font-size: 20px;
+}

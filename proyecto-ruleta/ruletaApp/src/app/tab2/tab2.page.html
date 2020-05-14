@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+
+
+<ion-content [fullscreen]="true">
+
+  
+  <ion-item *ngFor="let cupon of cupones">
+    
+    <img src="../../assets/imagen-cupon.png" alt="">
+    
+    <div class="contenido-cupon">
+      <ion-title class="titulo-cupon">{{cupon.nombre | titlecase}}</ion-title>
+      <div class="info-cupon">
+        <p class="texto-cupon">Restaurante: <span>{{cupon.restaurant.nombre}}</span></p>
+        <p class="texto-cupon" color="success">Precio: <span class="precio">{{cupon.precio | currency}}</span></p>
+      </div>
+
+      <div class="info-cupon">
+        <p class="texto-cupon">Descuento: <span class="precio">{{cupon.descuento | currency}}</span></p>
+        <p class="texto-cupon">Ahorro: <span class="precio">{{cupon.ahorro | currency}}</span></p>
+      </div>
+      <p class="texto-cupon">Descripcion: <span>{{cupon.descripcion}}</span></p>
+      
+    </div>
+    </ion-item>
+
+  
+</ion-content>

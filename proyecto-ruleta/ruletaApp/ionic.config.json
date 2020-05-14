@@ -1,0 +1,7 @@
+{
+  "name": "ruletaApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

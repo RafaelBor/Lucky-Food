@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs-res/inicio-restaurante"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Codigo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <div *ngIf="cod == ''">
+      <div class="contenido-cupon">
+        <h2>El cupon no  existe o ya fue usado</h2>
+      </div>
+  </div>
+  
+  <form #ventasForm="ngForm" (ngSubmit)="onSubmit(ventasForm)">
+    <div *ngFor="let c of cod">
+      
+      <div class="contenido-cupon"> <!--Cuerpo del cupon-->
+        
+        <div class="titulo">
+          <h2>{{c.codigos.restaurant.nombre | titlecase}}</h2>
+        </div>
+        <ion-label class="contenido">{{c.codigos.nombre}}</ion-label>
+        <div class="separar-contenido">
+          <div class="separar-contenido">
+            <ion-label>Precio: </ion-label >
+            <ion-input class="precio"
+                       type="text" 
+                       name="ventas_total"
+                       readonly="ture"
+                       #ventas_total="ngModel"
+                       [(ngModel)]="c.codigos.precio"
+                       ></ion-input>
+          </div>
+
+          <div class="separar-contenido">
+            <ion-label>Descuento:</ion-label>
+            <ion-input class="descuento"
+                       type="text" 
+                       name="ventas_ahorro"
+                       
+                       #ventas_ahorro="ngModel"
+                       [(ngModel)]="ventas.ventas_ahorro"
+                       
+                       >{{c.codigos.descuento}}</ion-input>
+          </div>  
+        </div>
+        
+        <ion-label class="total">Total: <span class="pagar">{{c.codigos.ahorro}}</span></ion-label>
+        <ion-label class="">Descripcion:</ion-label>
+        <ion-label class="total"> <span>{{c.codigos.descripcion}}</span></ion-label>
+
+        <ion-button  type="submit">Pagar</ion-button>
+      
+      </div> <!--Cierre de cuerpo-->
+    </div>
+  </form>
+
+  
+</ion-content>

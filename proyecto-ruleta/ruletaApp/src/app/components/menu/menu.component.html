@@ -1,0 +1,44 @@
+
+
+<ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu" auto-hide="false">
+  <ion-header>
+    <ion-toolbar color="primary">
+      
+      <ion-item color="primary"> 
+        <img src="../../../assets/ruletaIcono.png" alt="">
+        <ion-label class="centrado">Lucky Food</ion-label>
+      </ion-item>
+        
+        
+     
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-icon class="icon" color="primary" name="person-circle-outline"></ion-icon>
+        Mi Perfil
+      </ion-item>
+      <ion-item [routerLink]="['comprar-turno']"  > 
+        <ion-icon class="icon" color="primary" name="card"></ion-icon>
+        Comprar
+      </ion-item>
+      <ion-item>
+        <ion-icon class="icon" color="primary" name="fast-food-outline"></ion-icon>
+        Restaurantes
+      </ion-item>
+      <ion-item [routerLink]="['cupones-usuario', identity.sub]" >
+        <ion-icon class="icon" color="primary" name="ribbon-outline"></ion-icon>
+       Cupones
+      </ion-item>
+      <ion-item>
+        <ion-icon class="icon" color="primary" name="help-circle-outline"></ion-icon>
+        Ayuda
+      </ion-item>
+      <ion-item [routerLink]="['/logout/1']">
+        <ion-icon class="icon" color="primary" name="lock-open-outline"></ion-icon>
+        Cerrar Sesion
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>

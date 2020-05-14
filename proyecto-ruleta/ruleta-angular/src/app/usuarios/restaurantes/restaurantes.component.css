@@ -1,0 +1,15 @@
+
+.contenedor-restaurantes{
+    display: flex;
+    border-bottom: blue solid 1px;
+
+}
+
+.imagen img{
+    width: 300px;
+    height: 300px;
+}
+
+.contenido-restaurante{
+    padding-top: 40px;
+}

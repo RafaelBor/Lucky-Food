@@ -1,0 +1,19 @@
+<app-header></app-header>
+
+<ion-content>
+    <div class="imagen-restaurante">
+        <img src="../../../assets/restaurante-tab.png" alt="">
+    </div>
+    <form #codigoForm="ngForm" (ngSubmit)="onSubmit(codigoForm)" class="">
+        <ion-item class="form">
+            <ion-input 
+                class="codigo-input"
+                name="codigo"
+                 type="text"
+                #codigo="ngModel" 
+                 [(ngModel)]="codigos.codigo" 
+                ></ion-input>
+            <ion-button type="submit" class="buscar-codigo" >Buscar</ion-button>
+        </ion-item>
+    </form>
+</ion-content>

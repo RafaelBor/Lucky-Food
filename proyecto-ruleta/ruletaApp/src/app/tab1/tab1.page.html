@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+
+<ion-content [fullscreen]="true" color="">
+  
+
+  <div class="Texto-tab">
+    <ion-label>Hola {{identity.nombre | titlecase}}, <br> ¿Listo para empezar a jugar?</ion-label>
+  <br>
+
+ 
+    
+    <ion-button type="submit" shape="round" (click)=jugar() >Jugar</ion-button>
+  
+
+  </div>
+</ion-content>

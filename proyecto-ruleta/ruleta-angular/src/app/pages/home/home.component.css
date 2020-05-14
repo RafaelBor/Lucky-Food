@@ -1,0 +1,88 @@
+
+
+
+.contenido-home{
+    margin-top: 30px;
+}
+
+.dividir-dos{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: calc(50% - 1rem);
+}
+
+.dividir-uno{
+    padding: 0px 40px 40px 40px;
+    border: 1px solid #3880ff;
+    border-radius: 20%;
+    margin: 20px 40px;
+    flex-basis: calc(50% - 1rem)
+    
+  
+}
+
+.dividir-uno h3{
+    text-align: center;
+    color: #3880ff;
+}
+
+.dividir-uno p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #3880ff;
+}
+
+.texto-card{
+    display: flex;
+    
+}
+
+.texto-card img{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+/* Seccion juegos */
+
+.contenedor-juegos{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contenedor-juegos h3{
+    border-bottom: 2px solid #3880ff;
+}
+
+.juego{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 70px;
+    
+}
+
+.border-izquierdo{
+    border-left: solid 4px #3880ff;
+}
+
+.border-derecho{
+    border-right: solid 4px #3880ff;
+}
+
+.juego img{
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+}
+
+.juego-texto{
+    text-align: center;
+}
+
+.juego-texto h4{
+    font-weight: 700;
+    color: #3880ff;
+}
+

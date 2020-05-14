@@ -1,0 +1,28 @@
+<ion-header >
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/main/tabs/tab1"></ion-back-button>
+      </ion-buttons>
+    <ion-title>Elije tu paquete</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="imagen-pagar">
+    <img src="../../../assets/imagen-pagar.png" alt="">
+  </div>
+
+  <div class="metodos">
+    <div class="metodo-pago">
+      <img src="../../../assets//turno-uno.png" alt="">
+      <p>20$ mxm</p>
+      <ion-button type="submit" (click)=turnos()>Comprar</ion-button>
+    </div>
+
+    <div class="metodo-pago">
+      <img src="../../../assets//turno-tres.png" alt="">
+      <p>50$ mxm</p>
+      <ion-button>Comprar</ion-button>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,67 @@
+
+<div class="col-md-12 mt-3 center borde-form">
+    <div class="barra-form">
+    <h3>Ingresar Cupon</h3>
+    </div>
+    
+    <div class="alert alert-success" *ngIf="status == 'success'">
+        Los datos se han guardado correctamente
+     </div>
+ 
+     <div class="alert alert-danger" *ngIf="status == 'error'">
+        Error al guardar los datos
+     </div>
+
+     <form #cuponesForm="ngForm" (ngSubmit)="onSubmit(cuponesForm)" class="center ">
+        <div class="form-group">
+            <div class="formulario-estilo">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" class="form-control" #nombre="ngModel" [(ngModel)]="cupones.nombre" required>
+
+            <label for="precio">Precio</label>
+            <input type="text" name="precio" class="form-control" #precio="ngModel" [(ngModel)]="cupones.precio" required>
+
+            <label for="descuento">Descuento</label>
+            <input type="text" name="descuento" class="form-control" #descuento="ngModel" [(ngModel)]="cupones.descuento" required>
+
+            <label for="Descripcion">Descripcion</label>
+            <input type="text" name="Descripcion" class="form-control" #descripcion="ngModel" [(ngModel)]="cupones.descripcion" required>
+
+            <br>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                    <label for="restaurantes_id">Categoria</label>
+                    <select name="restaurantes_id" #restaurante="ngModel" [(ngModel)]="cupones.id_restaurante" class="form-control">
+                        
+                        <option *ngFor="let restaurant of restaurantes" value="{{restaurant.id}}">
+                            {{restaurant.nombre}}
+                        </option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="categorias_id">Categoria</label>
+                        <select name="categorias_id" #categoria="ngModel" [(ngModel)]="cupones.id_categoria" class="form-control">
+
+                            <option *ngFor="let categoria of categorias" value="{{categoria.id}}">
+                                {{categoria.nombre}}
+                            </option>
+                        </select>
+                    </div>
+                 </div>
+        </div>
+
+        <br>
+         <input type="submit" value="Guardar" class="btn btn-success" [disabled]="cuponesForm.invalid">
+
+        </div>
+        </div>
+
+     </form>
+
+
+</div>

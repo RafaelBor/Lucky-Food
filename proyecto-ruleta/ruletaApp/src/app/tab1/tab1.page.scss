@@ -1,0 +1,29 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+img{
+  background-position: center;
+  padding-top: 50px;
+  
+  width: 300;
+}
+
+.Texto-tab{
+  display: block;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 250px;
+  font-weight: 700;
+  color: #3880ff;
+}
+
+.icono{
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20%;
+  border: solid 3px #3880ff;
+}

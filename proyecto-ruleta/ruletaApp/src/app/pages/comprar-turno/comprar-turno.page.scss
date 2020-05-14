@@ -1,0 +1,36 @@
+
+
+.imagen-pagar img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.metodos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.metodo-pago img{
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-bottom: 1px solid #3880ff;
+}
+
+.metodo-pago{
+    text-align: center;
+    border: 3px solid #3880ff;
+    padding: 10px;
+    margin-top: 70px;
+    flex-basis: calc(50% - 3rem);
+}
+
+.metodo-pago p{
+    font-size: 20px;
+    font-weight: 700;
+    color: green;
+}

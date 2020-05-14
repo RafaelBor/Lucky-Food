@@ -1,0 +1,23 @@
+img{
+    width: 50px;
+    height: 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.margin{
+    margin-left: 10px;
+}
+
+.header-icon{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.icon{
+    margin-right: 20px;
+}

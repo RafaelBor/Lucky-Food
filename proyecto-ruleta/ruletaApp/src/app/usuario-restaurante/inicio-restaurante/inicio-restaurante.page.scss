@@ -1,0 +1,32 @@
+.buscar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.imagen-restaurante{
+     width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.buscar ion-label{
+    font-weight: 700;
+}
+
+.codigo-input{
+    border: 1px solid blue;
+}
+
+.buscar-codigo{
+   display: flex;
+   justify-content: center;
+}
+
+.form{
+    text-align: center;
+}
